@@ -18,8 +18,7 @@ let product = {
 }
 
 // code here
-
-
+let productCopy = {... product}
 
 
 ////////// PROBLEM 2 //////////
@@ -29,7 +28,7 @@ let product = {
 let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 // code here
-
+let colorsCopy = {... colors}
 
 
 
@@ -44,7 +43,8 @@ function addNums(num1, num2, num3) {
 }
 
 // code here
-
+let copy = {... numbers}
+let result = addNums(copy[0], copy[1], copy[2])
 
 ////////// PROBLEM 4 //////////
 
@@ -54,3 +54,5 @@ let arr1 = ['dog', 'chameleon', 'monkey'];
 let arr2 = ['bear', 'tiger', 'liger'];
 
 // code here
+let combinedArrays = [];
+combinedArrays = {...arr1}.concat({...arr2});
